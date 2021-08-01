@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+int add(int,int);
+float add(float,int);
+
+
+int add(int a,int b)
+{
+    return a+b;
+}
+float add(double x, int y)
+{
+    return x+y;
+}
+
+double add(long int x,double y)
+{
+    return x+y;
+}
+int main()
+{
+    int r1 = add(6,7);
+    float r2 = add(0.2,3);
+    double r3=add(214748364789,34556.0098798798798);
+    cout <<"r1 is : " <<r1<< endl;
+    cout <<"r2 is : "  <<r2<< endl;
+    cout <<"r3 is : "  <<r3<< endl;
+    return 0;
+}
