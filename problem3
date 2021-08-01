@@ -1,0 +1,26 @@
+#include<iostream>
+#include<bits/stdc++.h> 
+using namespace std;
+void max_a(int arr[]);
+void min_b(int arr[]);
+
+
+  int main()
+  {
+      int arr[10]={90,78,90,70,25,99,100,89,90,97};
+      max_a(arr);
+      min_b(arr);
+
+
+      return 0;
+  }
+ void max_a(int arr[])
+ {
+     sort(arr,arr+10);
+     cout<<arr[9]<<"\n";
+
+ }
+   void min_b(int arr[])
+   {
+       cout<<arr[0];
+   }
