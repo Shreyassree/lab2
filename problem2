@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+void volume(int a)
+{
+    int z=a*a*a;
+    cout << "Volume of cube is: "<<a<<endl;
+}
+
+void volume(int r,int h)
+{
+    float z=3.14*r*r*(h/3);
+    cout << "Volume of cone is: "<<z<<endl;
+}
+void volume(int r, int h,float pi)
+{
+    float a=pi*r*r*h;
+    cout << "Volume of cylinder is: "<<a<<endl;
+
+}
+
+int main()
+{
+    volume(5);
+    volume(3,8);
+    volume(2,5,3.14);
+}
